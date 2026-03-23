@@ -85,7 +85,7 @@ export default function AchievementHighlights() {
             Our Achievement Highlights
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Over a decade of technology excellence driving digital transformation,
+            10 years of technology excellence driving digital transformation,
             delivering remarkable results with impressive growth metrics.
           </p>
         </motion.div>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 /* ─── Client data ─── */
 
@@ -12,6 +13,7 @@ interface Project {
   category: string;
   color: string; // accent colour for the card top stripe
   initials: string; // fallback logo text
+  logo?: string; // actual logo image path
 }
 
 const projects: Project[] = [
@@ -23,6 +25,7 @@ const projects: Project[] = [
     category: "E-Commerce",
     color: "#c0392b",
     initials: "KB",
+    logo: "/kurtis-logo-large.png",
   },
   {
     name: "MFP Gym",
@@ -32,6 +35,7 @@ const projects: Project[] = [
     category: "Fitness & Health",
     color: "#2980b9",
     initials: "MFP",
+    logo: "/mfp logo.jpg",
   },
   {
     name: "Fortune City (TEX VALLEY)",
@@ -41,6 +45,7 @@ const projects: Project[] = [
     category: "Real Estate & Retail",
     color: "#16a085",
     initials: "FC",
+    logo: "/fortunecity.jpg",
   },
   {
     name: "VALENCIRĖ®",
@@ -50,6 +55,7 @@ const projects: Project[] = [
     category: "Fashion & Luxury",
     color: "#8e44ad",
     initials: "V",
+    logo: "/valencire.png",
   },
   {
     name: "Daluxe",
@@ -59,6 +65,7 @@ const projects: Project[] = [
     category: "Beauty & Skincare",
     color: "#d4a437",
     initials: "DA",
+    logo: "/daluxe.png",
   },
 ];
 
@@ -104,18 +111,30 @@ function ProjectCard({
       />
 
       {/* Logo area */}
-      <div className="flex items-center justify-center h-44 bg-gray-50 relative overflow-hidden">
+      <div className="flex items-center justify-center h-44 bg-gray-50 relative overflow-hidden p-8">
         {/* Decorative circle */}
         <div
           className="absolute w-32 h-32 rounded-full opacity-10 group-hover:opacity-20 transition-opacity duration-500"
           style={{ background: project.color }}
         />
-        <span
-          className="relative text-4xl md:text-5xl font-extrabold tracking-tight"
-          style={{ color: project.color }}
-        >
-          {project.initials}
-        </span>
+        
+        {project.logo ? (
+          <div className="relative w-full h-full flex items-center justify-center">
+            <Image
+              src={project.logo}
+              alt={`${project.name} logo`}
+              fill
+              className="object-contain transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+        ) : (
+          <span
+            className="relative text-4xl md:text-5xl font-extrabold tracking-tight"
+            style={{ color: project.color }}
+          >
+            {project.initials}
+          </span>
+        )}
 
         {/* External link icon on hover */}
         <div className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 shadow flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">

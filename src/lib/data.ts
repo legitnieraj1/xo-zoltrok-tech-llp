@@ -119,6 +119,12 @@ export const digitalSolutions = [
       "We harness artificial intelligence to build intelligent solutions that automate tasks, predict outcomes, and drive innovation.",
   },
   {
+    icon: "settings",
+    title: "BPO Call Services.",
+    description:
+      "Reliable and efficient BPO call services to handle your customer outreach, support, and business process needs with 10 years of expertise.",
+  },
+  {
     icon: "cpu",
     title: "Emerging technologies.",
     description:
