@@ -11,6 +11,7 @@ import {
   MessageCircle,
   Wrench,
   Cloud,
+  Phone,
   ArrowRight,
 } from "lucide-react";
 import { achievements } from "../lib/data";
@@ -22,6 +23,7 @@ const iconMap: Record<string, React.ElementType> = {
   "message-circle": MessageCircle,
   wrench: Wrench,
   cloud: Cloud,
+  phone: Phone,
 };
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {

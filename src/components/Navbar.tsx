@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
+import { Menu, X, ArrowRight, ChevronDown, Phone } from "lucide-react";
 
 /* ─── Dropdown data ─── */
 
@@ -19,6 +19,7 @@ const servicesCategories = [
   { label: "Emerging Technologies", active: false },
   { label: "Mobile Game Development", active: false },
   { label: "API Integration Services", active: false },
+  { label: "BPO Call Services", active: false },
 ];
 
 const servicesContent: Record<string, { heading: string; items: string[] }[]> = {
@@ -100,6 +101,26 @@ const servicesContent: Record<string, { heading: string; items: string[] }[]> = 
         "CRM Integration",
         "ERP Integration",
         "Cloud API Integration",
+      ],
+    },
+  ],
+  "BPO Call Services": [
+    {
+      heading: "Inbound & Outbound",
+      items: [
+        "Customer Support",
+        "Lead Generation",
+        "Telemarketing",
+        "Technical Support",
+      ],
+    },
+    {
+      heading: "Healthcare BPO",
+      items: [
+        "Medical Billing",
+        "Medical Coding",
+        "Insurance Verification",
+        "RCM Services",
       ],
     },
   ],

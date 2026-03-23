@@ -91,6 +91,18 @@ export const achievements = [
       "Disaster Recovery & Backup Solutions",
     ],
   },
+  {
+    icon: "phone",
+    number: 10,
+    suffix: "+",
+    title: "BPO Call Center Excellence",
+    items: [
+      "Inbound & Outbound Calling",
+      "Lead Gen & Multi-Channel Support",
+      "24/7 Operational Availability",
+      "Healthcare RCM & Coding",
+    ],
+  },
 ];
 
 export const digitalSolutions = [
