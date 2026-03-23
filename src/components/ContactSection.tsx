@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function ContactSection() {
-  const [activeLocation, setActiveLocation] = useState<"us" | "india">("us");
-
   return (
     <section className="bg-gradient-to-br from-navy to-navy-light py-20 px-4" id="contact">
       <div className="max-w-7xl mx-auto">
@@ -26,40 +23,21 @@ export default function ContactSection() {
               growth with our cutting-edge digital solutions.
             </p>
 
-            {/* Location toggle */}
+            {/* Location */}
             <div className="mb-6">
-              <p className="text-white font-semibold mb-3">Our Global Presence</p>
-              <div className="flex gap-2">
-                <button
-                  onClick={() => setActiveLocation("us")}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    activeLocation === "us"
-                      ? "gradient-orange text-white"
-                      : "bg-white/10 text-gray-400 hover:bg-white/20"
-                  }`}
-                >
-                  United States
-                </button>
-                <button
-                  onClick={() => setActiveLocation("india")}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    activeLocation === "india"
-                      ? "gradient-orange text-white"
-                      : "bg-white/10 text-gray-400 hover:bg-white/20"
-                  }`}
-                >
-                  India
-                </button>
-              </div>
+              <p className="text-white font-semibold mb-3">Our Office</p>
+              <span className="inline-block gradient-orange text-white px-4 py-2 rounded-full text-sm font-medium">
+                India
+              </span>
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3 text-gray-300">
-                <MapPin size={18} className="text-brand-orange flex-shrink-0" />
+              <div className="flex items-start gap-3 text-gray-300">
+                <MapPin size={18} className="text-brand-orange flex-shrink-0 mt-0.5" />
                 <span className="text-sm">
-                  {activeLocation === "us"
-                    ? "15065, Sunnyside ave, Morgan hill, CA 95037"
-                    : "Ahmedabad, Gujarat, India"}
+                  3rd Floor, Vue Grande, C4 &amp; C5, Thirumalaisamy St,
+                  Siddhapudur, Balasundaram Layout, Chinna, Coimbatore,
+                  Tamil Nadu 641044
                 </span>
               </div>
               <div className="flex items-center gap-3 text-gray-300">
@@ -68,9 +46,7 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center gap-3 text-gray-300">
                 <Phone size={18} className="text-brand-orange flex-shrink-0" />
-                <span className="text-sm">
-                  {activeLocation === "us" ? "+1 (408) 555-0123" : "+91 79 555 0123"}
-                </span>
+                <span className="text-sm">+91 90435 30842</span>
               </div>
             </div>
           </motion.div>
@@ -101,15 +77,9 @@ export default function ContactSection() {
                   className="bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-brand-orange transition-colors"
                 />
                 <div className="flex">
-                  <select
-                    className="bg-white/10 border border-white/10 rounded-l-lg px-3 py-3 text-gray-400 text-sm focus:outline-none focus:border-brand-orange w-20"
-                    aria-label="Country code"
-                  >
-                    <option value="+1">+1</option>
-                    <option value="+91">+91</option>
-                    <option value="+44">+44</option>
-                    <option value="+49">+49</option>
-                  </select>
+                  <span className="bg-white/10 border border-white/10 rounded-l-lg px-3 py-3 text-gray-400 text-sm flex items-center">
+                    +91
+                  </span>
                   <input
                     type="tel"
                     placeholder="Contact number"
@@ -141,7 +111,7 @@ export default function ContactSection() {
                 <Send size={16} />
               </button>
               <p className="text-gray-500 text-xs">
-                By submitting, you agree to our Terms & Conditions and Privacy
+                By submitting, you agree to our Terms &amp; Conditions and Privacy
                 Policy.
               </p>
             </form>

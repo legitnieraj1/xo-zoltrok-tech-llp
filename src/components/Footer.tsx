@@ -47,11 +47,7 @@ export default function Footer() {
               <span className="font-semibold text-white">Get in touch with us</span>
               <span className="flex items-center gap-1">
                 <Phone size={14} className="text-brand-orange" />
-                USA: +1 (408) 555-0123
-              </span>
-              <span className="flex items-center gap-1">
-                <Phone size={14} className="text-brand-orange" />
-                INDIA: +91 79 555 0123
+                +91 90435 30842
               </span>
             </div>
 
