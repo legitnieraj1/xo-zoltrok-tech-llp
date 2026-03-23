@@ -15,6 +15,7 @@ import TechStack from "../components/TechStack";
 import FAQ from "../components/FAQ";
 import Gallery from "../components/Gallery";
 import BlogCards from "../components/BlogCards";
+import CompanySection from "../components/CompanySection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import FloatingChat from "../components/FloatingChat";
@@ -39,6 +40,7 @@ export default function Home() {
       <FAQ />
       <Gallery />
       <BlogCards />
+      <CompanySection />
       <ContactSection />
       <Footer />
       <FloatingChat />

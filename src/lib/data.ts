@@ -545,3 +545,36 @@ export const footerLinks = {
     ],
   },
 };
+
+export const companyDetails = {
+  description:
+    "We are a results-driven Business Process Outsourcing (BPO) company committed to delivering high-quality, cost-effective solutions for businesses worldwide. With a team of skilled professionals and a strong focus on accuracy, efficiency, and scalability, we act as a seamless extension of our clients' operations. We prioritize data security, 24/7 support, and customized service delivery to meet diverse business needs.",
+  expertise: [
+    {
+      title: "Communication",
+      sub: "Inbound and outbound call center services.",
+      icon: "phone",
+    },
+    {
+      title: "Growth",
+      sub: "Lead generation and conversion.",
+      icon: "trending-up",
+    },
+    {
+      title: "Healthcare",
+      sub: "Revenue cycle management (RCM) and insurance verification.",
+      icon: "activity",
+    },
+    {
+      title: "Operations",
+      sub: "Data entry and back-office support.",
+      icon: "database",
+    },
+  ],
+  purpose: {
+    mission:
+      "To handle non-core processes with precision and reliability, enabling our clients to focus on growth and innovation.",
+    vision:
+      "To become a globally trusted BPO partner known for performance, integrity, and excellence.",
+  },
+};
