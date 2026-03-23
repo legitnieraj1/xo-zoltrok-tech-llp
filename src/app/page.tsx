@@ -13,6 +13,7 @@ import SixStepProcess from "../components/SixStepProcess";
 import Industries from "../components/Industries";
 import TechStack from "../components/TechStack";
 import FAQ from "../components/FAQ";
+import Gallery from "../components/Gallery";
 import BlogCards from "../components/BlogCards";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
@@ -36,6 +37,7 @@ export default function Home() {
       <Industries />
       <TechStack />
       <FAQ />
+      <Gallery />
       <BlogCards />
       <ContactSection />
       <Footer />

@@ -22,7 +22,7 @@ export const partnerLogos = [
 export const achievements = [
   {
     icon: "monitor",
-    number: 300,
+    number: 10,
     suffix: "+",
     title: "ERPs & CRMs Projects",
     items: [
@@ -35,14 +35,14 @@ export const achievements = [
   },
   {
     icon: "users",
-    number: 700,
+    number: 15,
     suffix: "+",
     title: "App Developers Hired",
     items: ["React Native", "Flutter", "PHP", "Node JS"],
   },
   {
     icon: "shield-check",
-    number: 150,
+    number: 20,
     suffix: "+",
     title: "Quality Engineering Solutions",
     items: [
@@ -55,7 +55,7 @@ export const achievements = [
   },
   {
     icon: "message-circle",
-    number: 200,
+    number: 25,
     suffix: "+",
     title: "Consulting & Advisory Sessions",
     items: [
@@ -68,7 +68,7 @@ export const achievements = [
   },
   {
     icon: "wrench",
-    number: 500,
+    number: 15,
     suffix: "+",
     title: "Maintenance & Support Engagements",
     items: [
@@ -80,7 +80,7 @@ export const achievements = [
   },
   {
     icon: "cloud",
-    number: 600,
+    number: 10,
     suffix: "+",
     title: "Cloud Migrations & Deployments",
     items: [

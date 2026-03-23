@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     "web development",
     "Zoltrok Tech",
   ],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

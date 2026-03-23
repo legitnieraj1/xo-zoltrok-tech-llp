@@ -65,3 +65,13 @@ body {
 .animate-dropdown {
   animation: dropdown 0.2s ease-out forwards;
 }
+
+/* Portfolio cards entrance */
+.portfolio-card-enter {
+  opacity: 0;
+  transform: translateY(32px);
+}
+.portfolio-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
