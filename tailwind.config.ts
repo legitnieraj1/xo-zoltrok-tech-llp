@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navy: {
+          DEFAULT: "#1b2e4a",
+          dark: "#0f1d32",
+          light: "#243b5e",
+        },
+        "brand-orange": {
+          DEFAULT: "#e8872b",
+          light: "#f5a623",
+        },
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
