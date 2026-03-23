@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   HeartPulse, GraduationCap, Landmark, Tv, Brain, Flag,
   Flame, ShoppingCart, Plane, ShoppingBag,
@@ -36,14 +37,13 @@ export default function Industries() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {industries.map((item, i) => {
             const Icon = iconMap[item.icon] || Brain;
-            return (
+            const content = (
               <motion.div
-                key={i}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05 }}
-                className="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-200 hover:border-brand-orange hover:shadow-md transition-all cursor-pointer group"
+                className="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-200 hover:border-brand-orange hover:shadow-md transition-all cursor-pointer group h-full"
               >
                 <Icon
                   className="text-gray-400 group-hover:text-brand-orange transition-colors"
@@ -53,6 +53,14 @@ export default function Industries() {
                   {item.label}
                 </span>
               </motion.div>
+            );
+
+            return item.href ? (
+              <Link key={i} href={item.href}>
+                {content}
+              </Link>
+            ) : (
+              <div key={i}>{content}</div>
             );
           })}
         </div>

@@ -30,6 +30,7 @@ const servicesContent: Record<string, { heading: string; items: string[] }[]> = 
         "Android App Development",
         "React Native App Development",
         "Hybrid App Development",
+        "BPO Call Services",
       ],
     },
     {
@@ -381,7 +382,7 @@ export default function Navbar() {
                           {industriesItems.map((text) => (
                             <a
                               key={text}
-                              href="#"
+                              href={text === "Healthcare" ? "/healthcare-bpo" : "#"}
                               className="flex items-center gap-2 text-gray-600 text-sm hover:text-brand-orange transition-colors py-1"
                             >
                               <ArrowRight

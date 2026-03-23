@@ -382,7 +382,7 @@ export const sixSteps = [
 ];
 
 export const industries = [
-  { icon: "heart-pulse", label: "Healthcare" },
+  { icon: "heart-pulse", label: "Healthcare", href: "/healthcare-bpo" },
   { icon: "graduation-cap", label: "Education" },
   { icon: "landmark", label: "FinTech" },
   { icon: "tv", label: "Sports and Media" },
@@ -578,3 +578,47 @@ export const companyDetails = {
       "To become a globally trusted BPO partner known for performance, integrity, and excellence.",
   },
 };
+
+export const healthcareBpoDetails = {
+  market: {
+    title: "Market Overview",
+    description: "The global healthcare BPO market was valued at around $367 billion in 2024 and is projected to reach $641 billion by 2032. The sector is expected to grow at a 9% CAGR, driven by rising billing inaccuracies, ICD-10/ICD-11 coding transitions, and increasing complexity of operations.",
+    points: [
+      "9% CAGR Growth through 2032",
+      "Transition from ICD-10 to ICD-11 Complexity",
+      "Addressing Global Billing Inaccuracies",
+    ]
+  },
+  pillars: [
+    {
+      title: "Medical Coding & Billing",
+      desc: "Managing diagnostic and procedural codes (ICD, CPT, HCPCS) with high accuracy to reduce denials and expedite reimbursements."
+    },
+    {
+      title: "Claims Processing",
+      desc: "Streamlining workflows and follow-ups to improve revenue cycle efficiency and reduce accounts receivable beyond 90 days."
+    },
+    {
+      title: "Revenue Cycle Management (RCM)",
+      desc: "A tech-enabled end-to-end process from eligibility verification to claims assessment and submission."
+    }
+  ],
+  rcmWorkflow: [
+    { step: "Eligibility Verification", detail: "Submitting clean claims to reduce denials due to missing information." },
+    { step: "Charge Capture & Billing", detail: "Processing services and verifying accurate charges for maximum recovery." },
+    { step: "Claims Assessment & Submission", detail: "Scrubbing claims via triple-checking information and correcting rejections." }
+  ],
+  techStack: [
+    "Practice Management Software (PMS)",
+    "Electronic Health Records (EHR)",
+    "AI-Assisted RCM Platforms",
+    "Telehealth Platform Integration",
+    "RPA for Claims Scrubbing"
+  ],
+  valueProp: [
+    { title: "Cost Efficiency", desc: "Lower operational costs compared to in-house teams." },
+    { title: "Speed & Accuracy", desc: "Faster billing cycles with AI-assisted verification." },
+    { title: "Revenue Growth", desc: "Reduced denial rates (averaging 20% in the industry) and better collections." }
+  ]
+};
+
